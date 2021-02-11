@@ -7,7 +7,7 @@ clear
 # setup server dan dapat digunakan untuk personal ataupun komersial.
 
 echo "===========================================================";
-echo "                     Setup My Server                       ";
+echo "                     SETUP MY SERVER                       ";
 echo "===========================================================";
 sudo apt-get update
 sudo apt -y install software-properties-common
@@ -19,8 +19,18 @@ sudo apt -y install php8.0-fpm php8.0-common php8.0-mysql php8.0-xml php8.0-xmlr
 sudo php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 sudo php composer-setup.php --install-dir=/usr/bin --filename=composer
 sudo php -r "unlink('composer-setup.php');"
-sudo cp -f default /etc/nginx/sites-available
+echo "===========================================================";
+echo "                    SETTING DOMAIN                         ";
+echo "===========================================================";
+echo -n "Masukkan nama domain (cth: sub.domian.ku) : "
+read domain
+sudo cp -f default $domain
+echo -n "Masukkan root directory (under: /var/www) : "
+read root_path
+sed -i "s/{domain_name}/$domain/g" $domain
+sed -i "s/{root_path}/$root_path/g" $domain
+sudo cp -f $domain /etc/nginx/sites-enabled
 sudo service nginx restart
 echo "===========================================================";
-echo "                         SELESAI                           ";
+echo "                PENGATURAN SERVER SELESAI                  ";
 echo "===========================================================";
