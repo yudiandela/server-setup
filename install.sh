@@ -27,9 +27,9 @@ read domain
 sudo cp -f default $domain
 echo -n "Masukkan root directory (under: /var/www) : "
 read root_path
-sed -i "s/{domain_name}/$domain/g" $domain
-sed -i "s/{root_path}/$root_path/g" $domain
-sudo cp -f $domain /etc/nginx/sites-enabled
+sed -i "s|{domain_name}|$domain|g" $domain
+sed -i "s|{root_path}|$root_path|g" $domain
+sudo mv -f $domain /etc/nginx/sites-enabled
 sudo service nginx restart
 echo "===========================================================";
 echo "                PENGATURAN SERVER SELESAI                  ";
