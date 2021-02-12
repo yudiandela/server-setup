@@ -1,6 +1,6 @@
 # Setup My Server
 
-versi v0.5.0
+versi v0.5.1
 -------------------------
 Script untuk mendukung otomatisasi server dengan nginx di Ubuntu Server 20.04
 
