@@ -1,6 +1,6 @@
 # Setup My Server
 
-versi v0.0.1
+versi v0.4.0
 -------------------------
 Script untuk mendukung otomatisasi server dengan nginx di Ubuntu Server 20.04
 
@@ -9,6 +9,7 @@ List Paket Penginstalan
 - PHP8.0 dari repository ppa:ondrej/php
 - Git terbaru dari repository ppa:git-core/ppa
 - Composer terbaru dari https://getcomposer.org
+- Laravel terbaru dari https://laravel.com
 
 Cara Penggunaan
 -------------------------
