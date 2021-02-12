@@ -1,6 +1,6 @@
 # Setup My Server
 
-versi v0.4.0
+versi v0.5.0
 -------------------------
 Script untuk mendukung otomatisasi server dengan nginx di Ubuntu Server 20.04
 
@@ -10,6 +10,7 @@ List Paket Penginstalan
 - Git terbaru dari repository ppa:git-core/ppa
 - Composer terbaru dari https://getcomposer.org
 - Laravel terbaru dari https://laravel.com
+- Install SSL dari Certbot https://certbot.eff.org
 
 Cara Penggunaan
 -------------------------

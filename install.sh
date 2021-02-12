@@ -14,6 +14,18 @@ then
     ## Install software-properties-common
     sudo apt -y install software-properties-common;
 
+    # Add repository php
+    sudo add-apt-repository -y ppa:ondrej/php;
+
+    ## Add repository git
+    sudo add-apt-repository -y ppa:git-core/ppa
+
+    ## Install snap core
+    sudo snap install core; sudo snap refresh core
+
+    ## Install certbot
+    sudo snap install --classic certbot
+
     touch SETUP_MY_SERVER;
 fi
 
@@ -37,17 +49,11 @@ do
     echo "";
     case $choice in
     1)  echo "Install PHP 8.0"
-        # Add repository php
-        sudo add-apt-repository -y ppa:ondrej/php
-
         # Install php8.0
         sudo apt -y install php8.0-fpm php8.0-common php8.0-mysql php8.0-xml php8.0-xmlrpc php8.0-curl php8.0-gd php8.0-imagick php8.0-cli php8.0-dev php8.0-imap php8.0-mbstring php8.0-opcache php8.0-soap php8.0-zip php8.0-intl
         echo -e "\e[1;32mInstall PHP 8.0 Selesai \e[0m"
         ;;
     2)  echo "Install GIT"
-        ## Add repository git
-        sudo add-apt-repository -y ppa:git-core/ppa
-
         ## Install GIT
         sudo apt -y install git
         echo -e "\e[1;32mInstall GIT Selesai \e[0m"
@@ -63,6 +69,8 @@ do
         echo -e "\e[1;32mPengaturan Domain Selesai \e[0m"
         ;;
     5)  echo "Aktifkan SSL"
+        ## Install Certificate
+        sudo certbot --nginx
         echo -e "\e[1;32mAktifkan SSL Selesai \e[0m"
         ;;
     6)  echo "Install Composer"
