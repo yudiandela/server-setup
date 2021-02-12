@@ -6,7 +6,7 @@ Script untuk mendukung otomatisasi server dengan nginx di Ubuntu Server 20.04
 
 List Paket Penginstalan
 -------------------------
-- PHP terbaru dari repository ppa:ondrej/php
+- PHP8.0 dari repository ppa:ondrej/php
 - Git terbaru dari repository ppa:git-core/ppa
 - Composer terbaru dari https://getcomposer.org
 
