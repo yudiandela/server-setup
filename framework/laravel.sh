@@ -24,7 +24,7 @@ fi
 sudo mkdir "/var/www/$path_dir";
 
 ## Setting Permission
-sudo chmod -R 777 "/var/www/$path_dir";
+sudo chmod -R 755 "/var/www/$path_dir";
 sudo chown -R $USER:$USER "/var/www/$path_dir";
 
 cd /var/www/$path_dir;
