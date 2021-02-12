@@ -56,3 +56,6 @@ do
         done
     fi
 done
+
+## Restart nginx service
+sudo service nginx restart

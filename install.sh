@@ -40,9 +40,6 @@ sudo php -r "unlink('composer-setup.php');"
 ## Setting Domain
 ./setting-domain.sh
 
-## Restart nginx service
-sudo service nginx restart
-
 echo "===========================================================";
 echo "                PENGATURAN SERVER SELESAI                  ";
 echo "===========================================================";
