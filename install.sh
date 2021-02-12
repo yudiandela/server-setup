@@ -38,7 +38,7 @@ sudo php composer-setup.php --install-dir=/usr/bin --filename=composer
 sudo php -r "unlink('composer-setup.php');"
 
 ## Setting Domain
-./setting-domain.sh
+config/domain.sh
 
 echo "===========================================================";
 echo "                PENGATURAN SERVER SELESAI                  ";

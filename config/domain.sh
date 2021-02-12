@@ -25,7 +25,7 @@ while [ "$next" == "y" ] || [ "$next" == "Y" ];
 do
     echo -n "Masukkan nama domain [cth: sub.domian.ku] : ";
     read domain;
-    sudo cp -f default $domain;
+    sudo cp -f nginx/default $domain;
 
     echo -n "Masukkan root directory [/var/www] : ";
     read root_path;
