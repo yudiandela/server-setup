@@ -38,7 +38,7 @@ do
     echo -e "\e[1;32m******************************************************************\e[0m";
     echo -e "* [1]  Install PHP 8.0                                           *";
     echo -e "* [2]  Install GIT                                               *";
-    echo -e "* [3]  Install PHP Framework [Laravel]                           *";
+    echo -e "* [3]  Install PHP Framework                                     *";
     echo -e "* [4]  Pengaturan Domain                                         *";
     echo -e "* [5]  Aktifkan SSL                                              *";
     echo -e "* [6]  Install Composer                                          *";
@@ -58,10 +58,9 @@ do
         sudo apt -y install git
         echo -e "\e[1;32mInstall GIT Selesai \e[0m"
         ;;
-    3)  echo "Install PHP Framework [Laravel]"
-        ## Install Framewwork laravel
-        framework/laravel.sh
-        echo -e "\e[1;32mInstall PHP Framework [Laravel] Selesai \e[0m"
+    3)  echo "Install PHP Framework [Laravel, Codeigniter]"
+        framework/install.sh
+        echo -e "\e[1;32mInstall PHP Framework Selesai \e[0m"
         ;;
     4)  echo "Pengaturan Domain"
         ## Setting Domain

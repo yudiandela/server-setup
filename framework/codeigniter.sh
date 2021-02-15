@@ -3,7 +3,7 @@ clear;
 
 # Yudi Andela <yudhi.andhela@gmail.com>
 
-echo "Menyiapkan penginstalan framework Laravel : ";
+echo "Menyiapkan penginstalan framework Codeigniter : ";
 echo "";
 echo -n "Directory penginstalan [/var/www] : ";
 read path_dir;
@@ -32,12 +32,4 @@ sudo chown -R $USER:$USER "/var/www/$path_dir";
 cd /var/www/$path_dir;
 
 ## Install Menggunakan composer
-composer create-project laravel/laravel . --remove-vcs --prefer-dist;
-
-## Setting Permission
-sudo chmod -R 755 storage;
-sudo chmod -R 755 bootstrap;
-
-## Setting Permission
-sudo chown -R www-data:www-data storage;
-sudo chown -R www-data:www-data bootstrap;
+composer create-project codeigniter4/appstarter . --remove-vcs --prefer-dist;
